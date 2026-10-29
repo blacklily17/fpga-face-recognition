@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path(__file__).resolve().parent/'generate_network_vectors.py';s=p.read_text().replace('packets=[];keeps=[];lasts=[];expect=[];outlast=[];summary=[]','packets=[];keeps=[];lasts=[];expect=[];outlast=[];summary=[]; replay_inputs=bytearray()')
+s=s.replace('y=conv(x,w,b,m);o,c,_,_=w.shape;', "y=conv(x,w,b,m);o,c,_,_=w.shape;\n if label.startswith('network_'):replay_inputs.extend(x.astype(np.int8).tobytes())\n")
+s=s.replace("print('GOLDEN_GENERATED'", "(root/'replay_inputs.bin').write_bytes(replay_inputs)\n(root/'image.bin').write_bytes((image+128).astype(np.uint8).tobytes())\nprint('GOLDEN_GENERATED'")
+p.write_text(s)
+p=Path(__file__).resolve().parent/'tb_dma_packet.sv';s=p.read_text().replace('integer i,j,n=0,cycles=0;', 'integer actual_file;integer i,j,n=0,cycles=0;')
+s=s.replace('if(outlast[n]!==', '$fwrite(actual_file,"%02x\\n",md[j*8+:8]);if(outlast[n]!==')
+s=s.replace('$readmemh("last.hex",lasts);','actual_file=$fopen("actual_outputs.hex","w");$readmemh("last.hex",lasts);')
+s=s.replace('$display("CONTIGUOUS_DMA_GOLDEN_PASS', '$fclose(actual_file);$display("CONTIGUOUS_DMA_GOLDEN_PASS')
+p.write_text(s)

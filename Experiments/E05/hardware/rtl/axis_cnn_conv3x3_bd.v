@@ -1,0 +1,41 @@
+module axis_cnn_conv3x3_bd #(
+    parameter integer MAX_WIDTH = 48,
+    parameter integer MAX_HEIGHT = 48,
+    parameter integer MAX_CHANNELS = 16,
+    parameter integer MAX_INPUT_BYTES = 36864,
+    parameter integer MAX_WEIGHT_BYTES = 2304,
+    parameter integer MAX_OUTPUT_BYTES = 36864
+) (
+    (* X_INTERFACE_PARAMETER = "ASSOCIATED_BUSIF S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn, FREQ_HZ 100000000" *)
+    input  wire        aclk,
+    (* X_INTERFACE_PARAMETER = "POLARITY ACTIVE_LOW" *) input wire aresetn,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *) input wire [31:0] s_axis_tdata,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TKEEP" *) input wire [3:0]  s_axis_tkeep,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *) input wire        s_axis_tvalid,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *) output wire       s_axis_tready,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *) input wire         s_axis_tlast,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) output wire [31:0]  m_axis_tdata,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TKEEP" *) output wire [3:0]   m_axis_tkeep,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) output wire       m_axis_tvalid,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input wire        m_axis_tready,
+    (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output wire        m_axis_tlast,
+    output wire protocol_error,
+    output wire busy
+);
+
+axis_cnn_conv3x3 core(
+.aclk(aclk),
+.aresetn(aresetn),
+.s_axis_tdata(s_axis_tdata),
+.s_axis_tkeep(s_axis_tkeep),
+.s_axis_tvalid(s_axis_tvalid),
+.s_axis_tready(s_axis_tready),
+.s_axis_tlast(s_axis_tlast),
+.m_axis_tdata(m_axis_tdata),
+.m_axis_tkeep(m_axis_tkeep),
+.m_axis_tvalid(m_axis_tvalid),
+.m_axis_tready(m_axis_tready),
+.m_axis_tlast(m_axis_tlast),
+.protocol_error(protocol_error),
+.busy(busy));
+endmodule

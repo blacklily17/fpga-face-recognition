@@ -1,0 +1,588 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 29 11:35:30 2026
+| Host         : LAPTOP-LM5IO3PF running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 10 -file E:/3FALL/FPGA_programme/face_recognition/_e04sleep29/build/h/r01/reports/facebox/worst_setup.rpt
+| Design       : facebox_system_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.506ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_master/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.520ns  (logic 0.398ns (26.180%)  route 1.122ns (73.820%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.075ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.367ns = ( 4.060 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.538ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.536     1.538    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    SLICE_X0Y23          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y23          FDCE (Prop_fdce_C_Q)         0.398     1.936 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/Q
+                         net (fo=2, routed)           1.122     3.058    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync
+    OLOGIC_X0Y24         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_master/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.364     4.060    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    OLOGIC_X0Y24         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_master/CLK
+                         clock pessimism              0.096     4.156    
+                         clock uncertainty           -0.134     4.022    
+    OLOGIC_X0Y24         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.564    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_master
+  -------------------------------------------------------------------
+                         required time                          3.564    
+                         arrival time                          -3.058    
+  -------------------------------------------------------------------
+                         slack                                  0.506    
+
+Slack (MET) :             0.521ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_slave/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.506ns  (logic 0.398ns (26.433%)  route 1.108ns (73.567%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.075ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.367ns = ( 4.060 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.538ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.536     1.538    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    SLICE_X0Y23          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y23          FDCE (Prop_fdce_C_Q)         0.398     1.936 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/Q
+                         net (fo=2, routed)           1.108     3.044    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync
+    OLOGIC_X0Y23         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_slave/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.364     4.060    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    OLOGIC_X0Y23         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_slave/CLK
+                         clock pessimism              0.096     4.156    
+                         clock uncertainty           -0.134     4.022    
+    OLOGIC_X0Y23         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.564    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/u_slave
+  -------------------------------------------------------------------
+                         required time                          3.564    
+                         arrival time                          -3.044    
+  -------------------------------------------------------------------
+                         slack                                  0.521    
+
+Slack (MET) :             0.547ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_slave/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.473ns  (logic 0.398ns (27.011%)  route 1.075ns (72.989%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.081ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.375ns = ( 4.068 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.552ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.550     1.552    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    SLICE_X0Y11          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y11          FDCE (Prop_fdce_C_Q)         0.398     1.950 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/Q
+                         net (fo=2, routed)           1.075     3.025    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync
+    OLOGIC_X0Y13         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_slave/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.373     4.068    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    OLOGIC_X0Y13         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_slave/CLK
+                         clock pessimism              0.096     4.164    
+                         clock uncertainty           -0.134     4.030    
+    OLOGIC_X0Y13         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.572    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_slave
+  -------------------------------------------------------------------
+                         required time                          3.572    
+                         arrival time                          -3.025    
+  -------------------------------------------------------------------
+                         slack                                  0.547    
+
+Slack (MET) :             0.548ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_slave/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.473ns  (logic 0.398ns (27.011%)  route 1.075ns (72.989%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.080ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.372ns = ( 4.065 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.548ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.546     1.548    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/serial_clk
+    SLICE_X0Y15          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y15          FDCE (Prop_fdce_C_Q)         0.398     1.946 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/Q
+                         net (fo=2, routed)           1.075     3.021    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync
+    OLOGIC_X0Y17         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_slave/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.369     4.065    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/serial_clk
+    OLOGIC_X0Y17         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_slave/CLK
+                         clock pessimism              0.096     4.161    
+                         clock uncertainty           -0.134     4.027    
+    OLOGIC_X0Y17         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.569    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_slave
+  -------------------------------------------------------------------
+                         required time                          3.569    
+                         arrival time                          -3.021    
+  -------------------------------------------------------------------
+                         slack                                  0.548    
+
+Slack (MET) :             0.556ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_master/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.454ns  (logic 0.348ns (23.937%)  route 1.106ns (76.063%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.081ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.375ns = ( 4.068 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.552ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.550     1.552    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/serial_clk
+    SLICE_X1Y12          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y12          FDCE (Prop_fdce_C_Q)         0.348     1.900 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/Q
+                         net (fo=2, routed)           1.106     3.006    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync
+    OLOGIC_X0Y16         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_master/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.373     4.068    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/serial_clk
+    OLOGIC_X0Y16         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_master/CLK
+                         clock pessimism              0.096     4.164    
+                         clock uncertainty           -0.134     4.030    
+    OLOGIC_X0Y16         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.468     3.562    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_master
+  -------------------------------------------------------------------
+                         required time                          3.562    
+                         arrival time                          -3.006    
+  -------------------------------------------------------------------
+                         slack                                  0.556    
+
+Slack (MET) :             0.559ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_master/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.461ns  (logic 0.398ns (27.238%)  route 1.063ns (72.762%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.081ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.375ns = ( 4.068 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.552ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.550     1.552    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    SLICE_X0Y11          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y11          FDCE (Prop_fdce_C_Q)         0.398     1.950 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/Q
+                         net (fo=2, routed)           1.063     3.013    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync
+    OLOGIC_X0Y14         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_master/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.373     4.068    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    OLOGIC_X0Y14         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_master/CLK
+                         clock pessimism              0.096     4.164    
+                         clock uncertainty           -0.134     4.030    
+    OLOGIC_X0Y14         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.572    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/u_master
+  -------------------------------------------------------------------
+                         required time                          3.572    
+                         arrival time                          -3.013    
+  -------------------------------------------------------------------
+                         slack                                  0.559    
+
+Slack (MET) :             0.560ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_master/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.461ns  (logic 0.398ns (27.238%)  route 1.063ns (72.762%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.080ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.372ns = ( 4.065 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.548ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.546     1.548    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/serial_clk
+    SLICE_X0Y15          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y15          FDCE (Prop_fdce_C_Q)         0.398     1.946 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync_reg/Q
+                         net (fo=2, routed)           1.063     3.009    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/enable_sync
+    OLOGIC_X0Y18         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_master/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.369     4.065    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/serial_clk
+    OLOGIC_X0Y18         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_master/CLK
+                         clock pessimism              0.096     4.161    
+                         clock uncertainty           -0.134     4.027    
+    OLOGIC_X0Y18         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.458     3.569    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_g/u_master
+  -------------------------------------------------------------------
+                         required time                          3.569    
+                         arrival time                          -3.009    
+  -------------------------------------------------------------------
+                         slack                                  0.560    
+
+Slack (MET) :             0.620ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_slave/OCE
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             clk_out2_facebox_system_hdmi_video_clk_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.390ns  (logic 0.348ns (25.037%)  route 1.042ns (74.963%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.081ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.375ns = ( 4.068 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.552ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.550     1.552    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/serial_clk
+    SLICE_X1Y12          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y12          FDCE (Prop_fdce_C_Q)         0.348     1.900 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync_reg/Q
+                         net (fo=2, routed)           1.042     2.942    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/enable_sync
+    OLOGIC_X0Y15         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_slave/OCE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.373     4.068    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/serial_clk
+    OLOGIC_X0Y15         OSERDESE2                                    r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_slave/CLK
+                         clock pessimism              0.096     4.164    
+                         clock uncertainty           -0.134     4.030    
+    OLOGIC_X0Y15         OSERDESE2 (Setup_oserdese2_CLK_OCE)
+                                                     -0.468     3.562    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_r/u_slave
+  -------------------------------------------------------------------
+                         required time                          3.562    
+                         arrival time                          -2.942    
+  -------------------------------------------------------------------
+                         slack                                  0.620    
+
+Slack (MET) :             0.906ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_release_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/CLR
+                            (recovery check against rising-edge clock clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.338ns  (logic 0.590ns (44.100%)  route 0.748ns (55.900%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.394ns = ( 4.087 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.552ns
+    Clock Pessimism Removal (CPR):    0.134ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.550     1.552    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    SLICE_X1Y11          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_release_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y11          FDCE (Prop_fdce_C_Q)         0.348     1.900 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_release_reg[1]/Q
+                         net (fo=1, routed)           0.347     2.247    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_release[1]
+    SLICE_X1Y11          LUT1 (Prop_lut1_I0_O)        0.242     2.489 f  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_meta_i_1__1/O
+                         net (fo=2, routed)           0.401     2.890    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_meta_i_1__1_n_0
+    SLICE_X0Y11          FDCE                                         f  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.392     4.087    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/serial_clk
+    SLICE_X0Y11          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg/C
+                         clock pessimism              0.134     4.222    
+                         clock uncertainty           -0.134     4.088    
+    SLICE_X0Y11          FDCE (Recov_fdce_C_CLR)     -0.292     3.796    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_b/enable_sync_reg
+  -------------------------------------------------------------------
+                         required time                          3.796    
+                         arrival time                          -2.890    
+  -------------------------------------------------------------------
+                         slack                                  0.906    
+
+Slack (MET) :             0.906ns  (required time - arrival time)
+  Source:                 facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_release_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/CLR
+                            (recovery check against rising-edge clock clk_out2_facebox_system_hdmi_video_clk_0_1  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            2.694ns  (clk_out2_facebox_system_hdmi_video_clk_0_1 rise@2.694ns - clk_out2_facebox_system_hdmi_video_clk_0_1 rise@0.000ns)
+  Data Path Delay:        1.338ns  (logic 0.590ns (44.100%)  route 0.748ns (55.900%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.383ns = ( 4.076 - 2.694 ) 
+    Source Clock Delay      (SCD):    1.538ns
+    Clock Pessimism Removal (CPR):    0.131ns
+  Clock Uncertainty:      0.134ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.259ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.515     1.515    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.165    -1.650 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.567    -0.083    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     0.002 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.536     1.538    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    SLICE_X1Y23          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_release_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y23          FDCE (Prop_fdce_C_Q)         0.348     1.886 r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_release_reg[1]/Q
+                         net (fo=1, routed)           0.347     2.233    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_release[1]
+    SLICE_X1Y23          LUT1 (Prop_lut1_I0_O)        0.242     2.475 f  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_meta_i_1__2/O
+                         net (fo=2, routed)           0.401     2.876    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_meta_i_1__2_n_0
+    SLICE_X0Y23          FDCE                                         f  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_facebox_system_hdmi_video_clk_0_1 rise edge)
+                                                      2.694     2.694 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     2.694 r  facebox_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=26721, routed)       1.350     4.043    facebox_system_i/hdmi_video_clk/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.851     1.192 r  facebox_system_i/hdmi_video_clk/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.426     2.619    facebox_system_i/hdmi_video_clk/inst/clk_out2_facebox_system_hdmi_video_clk_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     2.696 r  facebox_system_i/hdmi_video_clk/inst/clkout2_buf/O
+                         net (fo=24, routed)          1.381     4.076    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/serial_clk
+    SLICE_X0Y23          FDCE                                         r  facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg/C
+                         clock pessimism              0.131     4.208    
+                         clock uncertainty           -0.134     4.074    
+    SLICE_X0Y23          FDCE (Recov_fdce_C_CLR)     -0.292     3.782    facebox_system_i/tx2_axis_sink_0/inst/u_tx/u_c/enable_sync_reg
+  -------------------------------------------------------------------
+                         required time                          3.782    
+                         arrival time                          -2.876    
+  -------------------------------------------------------------------
+                         slack                                  0.906    
+
+
+
+

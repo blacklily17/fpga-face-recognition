@@ -1,0 +1,147 @@
+{
+  "status": "INTEGRATED_HWH_PASS",
+  "hwh": "D:\\CC\\FPGA-end\\build\\E01_Sleep_ascii\\e01sleep04\\hardware_baseline\\build\\h\\hw\\vivado\\facebox\\facebox.srcs\\sources_1\\bd\\facebox_system\\hw_handoff\\facebox_system.hwh",
+  "sha256": "d37923b9b776682d16670ceb58ccddf847cd0c91543f5874821c97082ff46cf8",
+  "checks": [
+    "Control interconnect has 14 masters",
+    "Original HP0 interconnect still has 4 inputs",
+    "Separate HP1 interconnect has 2 inputs",
+    "FCLK0 is 100MHz",
+    "axi_ctrl_interconnect/M09_AXI -> overlay_regs_0/s_axi",
+    "axi_ctrl_interconnect/M10_AXI -> snapshot_bram_ctrl/S_AXI",
+    "axi_ctrl_interconnect/M11_AXI -> match_dma/S_AXI_LITE",
+    "axi_ctrl_interconnect/M12_AXI -> match_control/S_AXI",
+    "axi_ctrl_interconnect/M13_AXI -> sleep_control/S_AXI",
+    "match_dma/M_AXI_MM2S -> match_mem/S00_AXI",
+    "match_dma/M_AXI_S2MM -> match_mem/S01_AXI",
+    "match_mem/M00_AXI -> processing_system7_0/S_AXI_HP1",
+    "axi_mem_interconnect/M00_AXI -> processing_system7_0/S_AXI_HP0",
+    "match_dma/M_AXIS_MM2S -> match_core/S_AXIS",
+    "match_core/M_AXIS -> match_dma/S_AXIS_S2MM",
+    "axi_vdma_0/M_AXI_MM2S -> axi_mem_interconnect/S00_AXI",
+    "axi_vdma_0/M_AXI_S2MM -> axi_mem_interconnect/S01_AXI",
+    "axi_dma_0/M_AXI_MM2S -> axi_mem_interconnect/S02_AXI",
+    "ui_vdma/M_AXI_MM2S -> axi_mem_interconnect/S03_AXI",
+    "real_camera_source_0/m_axis -> axi_vdma_0/S_AXIS_S2MM",
+    "axi_vdma_0/M_AXIS_MM2S -> tx2_axis_sink_0/s",
+    "processing_system7_0/FCLK_CLK0 -> axi_ctrl_interconnect/M11_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> axi_ctrl_interconnect/M12_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> axi_ctrl_interconnect/M13_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> sleep_control/s_axi_aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_dma/s_axi_lite_aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_dma/m_axi_mm2s_aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_dma/m_axi_s2mm_aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_core/aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_control/s_axi_aclk",
+    "processing_system7_0/FCLK_CLK0 -> match_mem/ACLK",
+    "processing_system7_0/FCLK_CLK0 -> match_mem/S00_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> match_mem/S01_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> match_mem/M00_ACLK",
+    "processing_system7_0/FCLK_CLK0 -> processing_system7_0/S_AXI_HP1_ACLK",
+    "reset_100m/peripheral_aresetn -> axi_ctrl_interconnect/M11_ARESETN",
+    "reset_100m/peripheral_aresetn -> axi_ctrl_interconnect/M12_ARESETN",
+    "reset_100m/peripheral_aresetn -> axi_ctrl_interconnect/M13_ARESETN",
+    "reset_100m/peripheral_aresetn -> sleep_control/s_axi_aresetn",
+    "reset_100m/peripheral_aresetn -> match_dma/axi_resetn",
+    "reset_100m/peripheral_aresetn -> match_control/s_axi_aresetn",
+    "reset_100m/peripheral_aresetn -> match_mem/ARESETN",
+    "reset_100m/peripheral_aresetn -> match_mem/S00_ARESETN",
+    "reset_100m/peripheral_aresetn -> match_mem/S01_ARESETN",
+    "reset_100m/peripheral_aresetn -> match_mem/M00_ARESETN",
+    "reset_100m/peripheral_aresetn -> match_reset/Op2",
+    "match_control/gpio_io_o -> match_reset/Op1",
+    "match_reset/Res -> match_core/aresetn",
+    "match_core/protocol_error -> match_control/gpio2_io_i",
+    "real_camera_source_0/gray_tap_resetn -> gray_snapshot_capture_0/aresetn",
+    "camera_start_gpio/gpio2_io_o -> real_camera_source_0/capture_enable",
+    "Camera capture control is scalar continuous baseline",
+    "M_AXI_MM2S read/write DDR range is HP1 0x00000000..0x3fffffff",
+    "M_AXI_S2MM read/write DDR range is HP1 0x00000000..0x3fffffff",
+    "CNN reserved addresses unused by axi_dma_0",
+    "CNN reserved addresses unused by match_dma",
+    "CNN reserved addresses unused by camera_start_gpio",
+    "CNN reserved addresses unused by hdmi_diag",
+    "CNN reserved addresses unused by wp4_control_gpio",
+    "CNN reserved addresses unused by wp4_flag_gpio",
+    "CNN reserved addresses unused by capture_keys",
+    "CNN reserved addresses unused by live_status_gpio",
+    "CNN reserved addresses unused by overlay_regs_0",
+    "CNN reserved addresses unused by match_control",
+    "CNN reserved addresses unused by sleep_control",
+    "CNN reserved addresses unused by snapshot_bram_ctrl",
+    "CNN reserved addresses unused by axi_vdma_0",
+    "CNN reserved addresses unused by ui_vdma",
+    "axi_dma_0 address/range (1077936128, 65536)",
+    "match_dma address/range (1078001664, 65536)",
+    "overlay_regs_0 address/range (1093009408, 65536)",
+    "snapshot_bram_ctrl address/range (1107296256, 131072)",
+    "match_control address/range (1093140480, 65536)",
+    "sleep_control address/range (1093206016, 65536)",
+    "PS peripheral ranges do not overlap",
+    "Address export agrees with HWH: (1077936128, 65536)",
+    "Address export agrees with HWH: (1078001664, 65536)",
+    "Address export agrees with HWH: (1093009408, 65536)",
+    "Address export agrees with HWH: (1107296256, 131072)",
+    "Address export agrees with HWH: (1093140480, 65536)",
+    "Address export agrees with HWH: (1093206016, 65536)"
+  ],
+  "errors": [],
+  "ps_addresses": {
+    "axi_dma_0": {
+      "base": "0x40400000",
+      "size": "0x10000"
+    },
+    "match_dma": {
+      "base": "0x40410000",
+      "size": "0x10000"
+    },
+    "camera_start_gpio": {
+      "base": "0x41200000",
+      "size": "0x10000"
+    },
+    "hdmi_diag": {
+      "base": "0x41210000",
+      "size": "0x10000"
+    },
+    "wp4_control_gpio": {
+      "base": "0x41220000",
+      "size": "0x10000"
+    },
+    "wp4_flag_gpio": {
+      "base": "0x41230000",
+      "size": "0x10000"
+    },
+    "capture_keys": {
+      "base": "0x41240000",
+      "size": "0x10000"
+    },
+    "live_status_gpio": {
+      "base": "0x41250000",
+      "size": "0x10000"
+    },
+    "overlay_regs_0": {
+      "base": "0x41260000",
+      "size": "0x10000"
+    },
+    "match_control": {
+      "base": "0x41280000",
+      "size": "0x10000"
+    },
+    "sleep_control": {
+      "base": "0x41290000",
+      "size": "0x10000"
+    },
+    "snapshot_bram_ctrl": {
+      "base": "0x42000000",
+      "size": "0x20000"
+    },
+    "axi_vdma_0": {
+      "base": "0x43000000",
+      "size": "0x10000"
+    },
+    "ui_vdma": {
+      "base": "0x43010000",
+      "size": "0x10000"
+    }
+  }
+}

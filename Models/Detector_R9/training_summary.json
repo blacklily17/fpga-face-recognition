@@ -1,0 +1,60 @@
+{
+  "run": "r9_coverage_full",
+  "epochs": 36,
+  "best": {
+    "epoch": 25,
+    "quant": true,
+    "loss": 0.47339264309924584,
+    "elapsed_s": 258.7659999999996,
+    "scale_augmented_images": 0,
+    "training_s": 9.15599999999904,
+    "calibration": {
+      "threshold": 0.5834345754621187,
+      "tp": 137,
+      "fp": 32,
+      "fn": 62,
+      "ignored_predictions": 25,
+      "precision": 0.8106508875739645,
+      "recall": 0.6884422110552764,
+      "eligible_faces": 199,
+      "images": 384,
+      "images_without_eligible_faces": 248,
+      "false_positives_on_images_without_eligible_faces": 13,
+      "iou_match": 0.5,
+      "nms_iou": 0.3,
+      "top_k": 100,
+      "max_detections": 16
+    },
+    "classification_loss": 0.2544368201161023,
+    "regression_loss": 0.07270903031092993,
+    "train_probe": {
+      "images": 64,
+      "score_quantiles": [
+        0,
+        0.5,
+        0.9,
+        1
+      ],
+      "positive": [
+        0.09903740882873535,
+        0.7695631980895996,
+        0.9346385598182678,
+        0.9600294828414917
+      ],
+      "negative": [
+        0.006789835169911385,
+        0.018090365454554558,
+        0.0602556336671114,
+        0.6082212328910828
+      ],
+      "c4_zero_fraction": 0.6581869125366211,
+      "c4_saturated_fraction": 0.004777018446475267
+    }
+  },
+  "training_collisions": 1,
+  "train_images": 12880,
+  "calibration_images": 384,
+  "heldout_read": false,
+  "dataset_manifest_sha256": "82ce35b517a14a1b60e635d0b54898cdcf4a7f317895bc5d1e73b1549709ce89",
+  "elapsed_s": 371.5630000000019
+}

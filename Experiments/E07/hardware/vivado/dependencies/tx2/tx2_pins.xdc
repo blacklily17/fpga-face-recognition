@@ -1,0 +1,10 @@
+# AC880硬件说明PDF第62页，TX2位于Bank13，核心板VCCIO13为3.3V。
+set_property PACKAGE_PIN AB7 [get_ports {tmds_data_p[2]}]
+set_property PACKAGE_PIN AB6 [get_ports {tmds_data_n[2]}]
+set_property PACKAGE_PIN AB5 [get_ports {tmds_data_p[1]}]
+set_property PACKAGE_PIN AB4 [get_ports {tmds_data_n[1]}]
+set_property PACKAGE_PIN Y4  [get_ports {tmds_data_p[0]}]
+set_property PACKAGE_PIN AA4 [get_ports {tmds_data_n[0]}]
+set_property PACKAGE_PIN Y6 [get_ports tmds_clk_p]
+set_property PACKAGE_PIN Y5 [get_ports tmds_clk_n]
+set_property IOSTANDARD TMDS_33 [get_ports {tmds_data_p[*] tmds_data_n[*] tmds_clk_p tmds_clk_n}]

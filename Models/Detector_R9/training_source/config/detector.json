@@ -1,0 +1,27 @@
+{
+  "schema": "ac880-full-frame-detector-design-v1",
+  "input_width": 160,
+  "input_height": 96,
+  "input_channels": 1,
+  "channels": 8,
+  "strides": [8, 16],
+  "minimum_face_input_pixels": 12,
+  "seed": 20261014,
+  "train_limit": 4096,
+  "calibration_limit": 384,
+  "holdout_limit": 384,
+  "epochs": 40,
+  "float_warmup_epochs": 10,
+  "batch_size": 64,
+  "learning_rate": 0.002,
+  "nms_iou": 0.3,
+  "top_k": 100,
+  "max_detections": 16,
+  "gate": {
+    "eligible_face_recall_min": 0.7,
+    "precision_min": 0.8,
+    "maximum_int8_recall_drop": 0.05,
+    "minimum_eligible_faces": 100,
+    "description": "Prototype offline gate on faces >=12 network pixels; not official WIDER AP or camera acceptance"
+  }
+}

@@ -1,0 +1,16 @@
+**/build/
+**/.Xil/
+**/.cache/
+**/__pycache__/
+*.jou
+*.log
+*.str
+*.db
+*.bak
+*.elf
+*.map
+*.o
+*.pyc
+.env
+.env.*
+runs/

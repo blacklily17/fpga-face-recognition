@@ -1,0 +1,132 @@
+{
+  "numerical_contract_passed": true,
+  "input_shape": [
+    96,
+    160,
+    1
+  ],
+  "channels": 16,
+  "layers": [
+    {
+      "name": "C1",
+      "shift": 5,
+      "max_abs_accumulator": 30957,
+      "weights": 144,
+      "biases": 16
+    },
+    {
+      "name": "C2",
+      "shift": 8,
+      "max_abs_accumulator": 559493,
+      "weights": 2304,
+      "biases": 16
+    },
+    {
+      "name": "C3",
+      "shift": 8,
+      "max_abs_accumulator": 423681,
+      "weights": 2304,
+      "biases": 16
+    },
+    {
+      "name": "C4",
+      "shift": 7,
+      "max_abs_accumulator": 374840,
+      "weights": 2304,
+      "biases": 16
+    },
+    {
+      "name": "C5",
+      "shift": 7,
+      "max_abs_accumulator": 429612,
+      "weights": 2304,
+      "biases": 16
+    }
+  ],
+  "rows": 300,
+  "budget": {
+    "input": [
+      96,
+      160,
+      1
+    ],
+    "channels": 16,
+    "conv_feature_shapes": [
+      [
+        96,
+        160,
+        16
+      ],
+      [
+        48,
+        80,
+        16
+      ],
+      [
+        24,
+        40,
+        16
+      ],
+      [
+        12,
+        20,
+        16
+      ],
+      [
+        6,
+        10,
+        16
+      ]
+    ],
+    "conv_macs_by_layer": [
+      2211840,
+      8847360,
+      2211840,
+      552960,
+      138240
+    ],
+    "conv_macs": 13962240,
+    "ps_head_macs": 24000,
+    "max_feature_bytes": 245760,
+    "two_feature_workspaces_bytes": 491520,
+    "retained_stride8_feature_bytes": 3840,
+    "candidates": 300,
+    "head_rows_float64_bytes": 12000,
+    "conv_tiles": [
+      24,
+      6,
+      2,
+      1,
+      1
+    ],
+    "pool_tiles": [
+      15,
+      6,
+      2,
+      1
+    ],
+    "operator_jobs": 58
+  },
+  "runtime_ops": [
+    "five ordinary 3x3 stride1 valid conv on halo tiles, ReLU, integer shift/saturate",
+    "four signed 2x2 max-pool, global phase",
+    "two PS signed linear heads; sigmoid/exp and NMS remain PS"
+  ],
+  "normalized_feature_range": [
+    0,
+    127
+  ],
+  "input_integer_range": [
+    -128,
+    127
+  ],
+  "c8_reference_compatible": false,
+  "hardware_backend": false,
+  "downloadable_firmware": false,
+  "board_tested": false,
+  "unresolved": [
+    "16-channel C/ARM workspace, numeric head, DMA wrapper and pool specialization not implemented",
+    "effect gate, holdout/camera acceptance, RTL timing/CDC/I/O and actual latency not proven"
+  ],
+  "model_sha256": "32aa082f7f665026523bf50971404dd347fbeeed619d8a0232950743ea94b88b"
+}

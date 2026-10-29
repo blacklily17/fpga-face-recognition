@@ -1,0 +1,57 @@
+{
+  "args": {
+    "run": "r9_coverage_full",
+    "epochs": 36,
+    "architecture": "tiny8_bn",
+    "loss": "dense_focal",
+    "float_warmup": 24,
+    "learning_rate": 0.001,
+    "foreground_prior": null,
+    "channels": 16,
+    "data": "data/prepared_full_scale_r1",
+    "transfer": "models/r8_center_ignore160_c16/float_checkpoint.pt",
+    "batch_size": null,
+    "threads": 8,
+    "device": "cuda",
+    "assignment": "center_ignore",
+    "scale_probability": 0.0
+  },
+  "epochs": 36,
+  "float_warmup_epochs": 24,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "threads": 8,
+  "channels": 16,
+  "input_shape": [
+    96,
+    160
+  ],
+  "transfer": {
+    "path": "D:\\CC\\FPGA-end\\AC880_CNN_Detector_20261014\\models\\r8_center_ignore160_c16\\float_checkpoint.pt",
+    "sha256": "277b18aa3868f36f4207c76164063b4e06a02de3601ef6f8fdea455b584451b4",
+    "source_epoch": 60,
+    "method": "direct float checkpoint transfer"
+  },
+  "seed": 20261014,
+  "heldout_read": false,
+  "assignment": {
+    "policy": "center_ignore",
+    "images": 12880,
+    "eligible_faces": 6441,
+    "positive_cells": 6440,
+    "ignored_cells": 362671,
+    "negative_cells": 3494889,
+    "collision_attempts": 1,
+    "maximum_abs_center_offset": 0.5
+  },
+  "scale_augmentation": null,
+  "runtime": {
+    "torch": "2.7.1+cu128",
+    "numpy": "1.26.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "tf32": false,
+    "mixed_precision": false
+  },
+  "checkpoint_selection": "exact-score-boundary calibration; precision >= 0.8 then recall"
+}

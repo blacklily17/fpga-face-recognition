@@ -1,0 +1,2493 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project Version="7" Minor="39" Path="facebox.xpr">
+  <DefaultLaunch Dir="$PRUNDIR" />
+  <Configuration>
+    <Option Name="Id" Val="c1808368395d452e86c775a3ebae107b" />
+    <Option Name="Part" Val="xc7z020clg484-2" />
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib" />
+    <Option Name="CompiledLibDirXSim" Val="" />
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim" />
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa" />
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies" />
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium" />
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs" />
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera" />
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl" />
+    <Option Name="BoardPart" Val="" />
+    <Option Name="ActiveSimSet" Val="sim_1" />
+    <Option Name="DefaultLib" Val="xil_defaultlib" />
+    <Option Name="ProjectType" Val="Default" />
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip" />
+    <Option Name="IPCachePermission" Val="read" />
+    <Option Name="IPCachePermission" Val="write" />
+    <Option Name="EnableCoreContainer" Val="FALSE" />
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE" />
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR" />
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic" />
+    <Option Name="EnableBDX" Val="FALSE" />
+    <Option Name="DSAVendor" Val="xilinx" />
+    <Option Name="DSANumComputeUnits" Val="60" />
+    <Option Name="WTXSimLaunchSim" Val="0" />
+    <Option Name="WTModelSimLaunchSim" Val="0" />
+    <Option Name="WTQuestaLaunchSim" Val="0" />
+    <Option Name="WTIesLaunchSim" Val="0" />
+    <Option Name="WTVcsLaunchSim" Val="0" />
+    <Option Name="WTRivieraLaunchSim" Val="0" />
+    <Option Name="WTActivehdlLaunchSim" Val="0" />
+    <Option Name="WTXSimExportSim" Val="0" />
+    <Option Name="WTModelSimExportSim" Val="0" />
+    <Option Name="WTQuestaExportSim" Val="0" />
+    <Option Name="WTIesExportSim" Val="0" />
+    <Option Name="WTVcsExportSim" Val="0" />
+    <Option Name="WTRivieraExportSim" Val="0" />
+    <Option Name="WTActivehdlExportSim" Val="0" />
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE" />
+    <Option Name="XSimRadix" Val="hex" />
+    <Option Name="XSimTimeUnit" Val="ns" />
+    <Option Name="XSimArrayDisplayLimit" Val="1024" />
+    <Option Name="XSimTraceLimit" Val="65536" />
+    <Option Name="SimTypes" Val="rtl" />
+    <Option Name="SimTypes" Val="bfm" />
+    <Option Name="SimTypes" Val="tlm" />
+    <Option Name="SimTypes" Val="tlm_dpi" />
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE" />
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs" />
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/capture_key_sync.sv">
+        <FileInfo SFType="Verilog">
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/capture_key_sync.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_core.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_core.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_histogram.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_histogram.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/roi_resize_128.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/roi_resize_128.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/window3x3.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/window3x3.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp4_board_bridge_m13.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp4_board_bridge_m13.sv" />
+          <Attr Name="ImportTime" Val="1792481855" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp4_lbp_pipeline.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp4_lbp_pipeline.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp4_board_bridge_m13_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp4_board_bridge_m13_bd.v" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_fifo_gray_cdc/axis_fifo_gray_cdc.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/axis_fifo_gray_cdc/axis_fifo_gray_cdc.xci" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_fifo_gray_tag_cdc/axis_fifo_gray_tag_cdc.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/axis_fifo_gray_tag_cdc/axis_fifo_gray_tag_cdc.xci" />
+          <Attr Name="ImportTime" Val="1793243679" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_fifo_rgb_cdc/axis_fifo_rgb_cdc.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/axis_fifo_rgb_cdc/axis_fifo_rgb_cdc.xci" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/dvp_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/dvp_rx.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/frame_stats.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/frame_stats.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/ov5640_init.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/ov5640_init.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/ov5640_rate_control.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/ov5640_rate_control.v" />
+          <Attr Name="ImportTime" Val="1792415104" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/rgb565_unpack_gray.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/rgb565_unpack_gray.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/sccb_master.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/camera/sccb_master.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp1_ov5640_board_if.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp1_ov5640_board_if.v" />
+          <Attr Name="ImportTime" Val="1792415104" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/top/wp2_camera_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/top/wp2_camera_top.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/axis_frame_resync.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/axis_frame_resync.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/camera_dual_axis_guard.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/camera_dual_axis_guard.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/gray_downscale_2x.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/gray_downscale_2x.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/source_frame_verdict_cdc.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/source_frame_verdict_cdc.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/common/toggle_event_cdc.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/common/toggle_event_cdc.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/triple_buffer_commit_manager.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/triple_buffer_commit_manager.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp3_dual_fifo_frame_bridge.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp3_dual_fifo_frame_bridge.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp3_frame_safe_pipeline.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/wp3_frame_safe_pipeline.sv" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/real_camera_wp2_wp3_axis_source.sv">
+        <FileInfo SFType="Verilog">
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/real_camera_wp2_wp3_axis_source.sv" />
+          <Attr Name="ImportTime" Val="1792415105" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/display/rgb_lcd_timing.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/display/rgb_lcd_timing.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/rgb_lcd_timing_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/rgb_lcd_timing_bd.v" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_axis_viewport.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_axis_viewport.v" />
+          <Attr Name="ImportTime" Val="1792637288" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_raster.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_raster.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_serializer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_serializer.v" />
+          <Attr Name="ImportTime" Val="1792483880" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_sleep_osd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_sleep_osd.v" />
+          <Attr Name="ImportTime" Val="1792637251" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_tmds_encoder.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_tmds_encoder.v" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_video_out.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_video_out.v" />
+          <Attr Name="ImportTime" Val="1792415105" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/bbox_mailbox.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/bbox_mailbox.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/display/hdmi_bbox_overlay.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/display/hdmi_bbox_overlay.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_axis_sink.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/tx2/tx2_axis_sink.v" />
+          <Attr Name="ImportTime" Val="1792637288" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/overlay_regs.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/overlay_regs.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/overlay_regs_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/overlay_regs_bd.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/gray_snapshot_capture.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/gray_snapshot_capture.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/gray_snapshot_capture_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/gray_snapshot_capture_bd.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/gray_snapshot_bram.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/capture/gray_snapshot_bram.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/gray_snapshot_bram_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/gray_snapshot_bram_bd.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/overlay_ack_tracker.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/control/overlay_ack_tracker.sv" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/overlay_ack_tracker_bd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/bringup/overlay_ack_tracker_bd.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/distance_div14.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/distance_div14.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/distance_div_step.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/distance_div_step.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/lbp_distance_pipeline.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/lbp_distance_pipeline.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/axis_lbp_distance.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/rtl/axis_lbp_distance.v" />
+          <Attr Name="ImportTime" Val="1792320477" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/facebox_system/facebox_system.bd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/facebox_system/facebox_system.bd" />
+          <Attr Name="ImportTime" Val="1793243706" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_5/facebox_system_auto_pc_5.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_5" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_cc_0/facebox_system_auto_cc_0.xci">
+          <Proxy FileSetName="facebox_system_auto_cc_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_xbar_0/facebox_system_xbar_0.xci">
+          <Proxy FileSetName="facebox_system_xbar_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_camera_start_gpio_0/facebox_system_camera_start_gpio_0.xci">
+          <Proxy FileSetName="facebox_system_camera_start_gpio_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_13/facebox_system_auto_pc_13.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_13" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_processing_system7_0_0/facebox_system_processing_system7_0_0.xci">
+          <Proxy FileSetName="facebox_system_processing_system7_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_axi_vdma_0_0/facebox_system_axi_vdma_0_0.xci">
+          <Proxy FileSetName="facebox_system_axi_vdma_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_0/facebox_system_auto_pc_0.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_1/facebox_system_auto_pc_1.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_1" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_2/facebox_system_auto_pc_2.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_2" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_4/facebox_system_auto_pc_4.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_4" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_7/facebox_system_auto_pc_7.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_7" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_11/facebox_system_auto_pc_11.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_11" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_3/facebox_system_auto_pc_3.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_3" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_6/facebox_system_auto_pc_6.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_6" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_8/facebox_system_auto_pc_8.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_8" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_12/facebox_system_auto_pc_12.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_12" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_live_status_gpio_0/facebox_system_live_status_gpio_0.xci">
+          <Proxy FileSetName="facebox_system_live_status_gpio_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_wp4_control_gpio_0/facebox_system_wp4_control_gpio_0.xci">
+          <Proxy FileSetName="facebox_system_wp4_control_gpio_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_wp4_flag_gpio_0/facebox_system_wp4_flag_gpio_0.xci">
+          <Proxy FileSetName="facebox_system_wp4_flag_gpio_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_14/facebox_system_auto_pc_14.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_14" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_reset_100m_0/facebox_system_reset_100m_0.xci">
+          <Proxy FileSetName="facebox_system_reset_100m_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_wp4_board_bridge_0_0/facebox_system_wp4_board_bridge_0_0.xci">
+          <Proxy FileSetName="facebox_system_wp4_board_bridge_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_10/facebox_system_auto_pc_10.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_10" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_reset_lcd_0/facebox_system_reset_lcd_0.xci">
+          <Proxy FileSetName="facebox_system_reset_lcd_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_real_camera_source_0_0/facebox_system_real_camera_source_0_0.xci">
+          <Proxy FileSetName="facebox_system_real_camera_source_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_camera_clk_wiz_0/facebox_system_camera_clk_wiz_0.xci">
+          <Proxy FileSetName="facebox_system_camera_clk_wiz_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_video_clk_wiz_0/facebox_system_video_clk_wiz_0.xci">
+          <Proxy FileSetName="facebox_system_video_clk_wiz_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_reset_camera_config_0/facebox_system_reset_camera_config_0.xci">
+          <Proxy FileSetName="facebox_system_reset_camera_config_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_capture_keys_0/facebox_system_capture_keys_0.xci">
+          <Proxy FileSetName="facebox_system_capture_keys_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_capture_key_sync_0_0/facebox_system_capture_key_sync_0_0.xci">
+          <Proxy FileSetName="facebox_system_capture_key_sync_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_rgb_lcd_timing_0_0/facebox_system_rgb_lcd_timing_0_0.xci">
+          <Proxy FileSetName="facebox_system_rgb_lcd_timing_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_xbar_1/facebox_system_xbar_1.xci">
+          <Proxy FileSetName="facebox_system_xbar_1" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_9/facebox_system_auto_pc_9.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_9" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_axi_dma_0_0/facebox_system_axi_dma_0_0.xci">
+          <Proxy FileSetName="facebox_system_axi_dma_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_overlay_regs_0_0/facebox_system_overlay_regs_0_0.xci">
+          <Proxy FileSetName="facebox_system_overlay_regs_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_sleep_control_0/facebox_system_sleep_control_0.xci">
+          <Proxy FileSetName="facebox_system_sleep_control_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_reset_hdmi_0/facebox_system_reset_hdmi_0.xci">
+          <Proxy FileSetName="facebox_system_reset_hdmi_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_match_reset_0/facebox_system_match_reset_0.xci">
+          <Proxy FileSetName="facebox_system_match_reset_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_match_control_0/facebox_system_match_control_0.xci">
+          <Proxy FileSetName="facebox_system_match_control_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_match_core_0/facebox_system_match_core_0.xci">
+          <Proxy FileSetName="facebox_system_match_core_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_hdmi_video_clk_0/facebox_system_hdmi_video_clk_0.xci">
+          <Proxy FileSetName="facebox_system_hdmi_video_clk_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_overlay_ack_tracker_0_0/facebox_system_overlay_ack_tracker_0_0.xci">
+          <Proxy FileSetName="facebox_system_overlay_ack_tracker_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_xbar_2/facebox_system_xbar_2.xci">
+          <Proxy FileSetName="facebox_system_xbar_2" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_gray_snapshot_capture_0_0/facebox_system_gray_snapshot_capture_0_0.xci">
+          <Proxy FileSetName="facebox_system_gray_snapshot_capture_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_hdmi_diag_0/facebox_system_hdmi_diag_0.xci">
+          <Proxy FileSetName="facebox_system_hdmi_diag_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_tx2_axis_sink_0_0/facebox_system_tx2_axis_sink_0_0.xci">
+          <Proxy FileSetName="facebox_system_tx2_axis_sink_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_gray_snapshot_bram_0_0/facebox_system_gray_snapshot_bram_0_0.xci">
+          <Proxy FileSetName="facebox_system_gray_snapshot_bram_0_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_match_dma_0/facebox_system_match_dma_0.xci">
+          <Proxy FileSetName="facebox_system_match_dma_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_snapshot_bram_ctrl_0/facebox_system_snapshot_bram_ctrl_0.xci">
+          <Proxy FileSetName="facebox_system_snapshot_bram_ctrl_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_ui_vdma_0/facebox_system_ui_vdma_0.xci">
+          <Proxy FileSetName="facebox_system_ui_vdma_0" />
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="facebox_system.bd" FileRelPathName="ip/facebox_system_auto_pc_15/facebox_system_auto_pc_15.xci">
+          <Proxy FileSetName="facebox_system_auto_pc_15" />
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/facebox_system/hdl/facebox_system_wrapper.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/facebox_system/hdl/facebox_system_wrapper.v" />
+          <Attr Name="ImportTime" Val="1793243707" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_lcd_bd.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1" />
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_lcd_bd.v" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp2_wp3_stage5_axis_source.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1" />
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/bringup/wp2_wp3_stage5_axis_source.v" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_lcd_overlay.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1" />
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_lcd_overlay.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_status_cdc.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1" />
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/live_status_cdc.sv" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/data/ov5640_800x480_rgb565_30fps.mem">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/WP1WP2/WP1_2/rtl/data/ov5640_800x480_rgb565_30fps.mem" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_uniform_map.mem">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/_e04sleep29/vivado/dependencies/rtl/image/lbp_uniform_map.mem" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/archive_project_summary.txt" />
+      <Config>
+        <Option Name="DesignMode" Val="RTL" />
+        <Option Name="TopModule" Val="facebox_system_wrapper" />
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs" />
+      <File Path="$PSRCDIR/constrs_1/imports/vivado/dependencies/vivado/constraints/ac880_ps_ddr_vdma_lcd.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/vivado/dependencies/vivado/constraints/ac880_ps_ddr_vdma_lcd.xdc" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/vivado/dependencies/vivado/constraints/ac880_ov5640_dvp_stage6b.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/vivado/dependencies/vivado/constraints/ac880_ov5640_dvp_stage6b.xdc" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/vivado/dependencies/capture_keys.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/vivado/dependencies/capture_keys.xdc" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/vivado/dependencies/tx2/tx2_pins.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/vivado/dependencies/tx2/tx2_pins.xdc" />
+          <Attr Name="ImportTime" Val="1792320479" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/vivado/touch_pins.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/vivado/touch_pins.xdc" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC" />
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs" />
+      <Config>
+        <Option Name="DesignMode" Val="RTL" />
+        <Option Name="TopModule" Val="tx2_axis_sink" />
+        <Option Name="TopLib" Val="xil_defaultlib" />
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../_e04sleep29/vivado/dependencies/tx2/tx2_axis_sink.v" />
+        <Option Name="TopAutoSet" Val="TRUE" />
+        <Option Name="TransportPathDelay" Val="0" />
+        <Option Name="TransportIntDelay" Val="0" />
+        <Option Name="SrcSet" Val="sources_1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+      <Filter Type="Utils" />
+      <File Path="$PSRCDIR/utils_1/imports/vivado/apply_cdc_constraints.tcl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/utils_1/imports/vivado/apply_cdc_constraints.tcl" />
+          <Attr Name="ImportTime" Val="1792416533" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+          <Attr Name="UsedInSteps" Val="impl_1;OPT_DESIGN;TCL.PRE" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/utils_1/imports/vivado/overlay_cdc.tcl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/utils_1/imports/vivado/overlay_cdc.tcl" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/utils_1/imports/vivado/sleep_cdc.tcl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/utils_1/imports/vivado/sleep_cdc.tcl" />
+          <Attr Name="ImportTime" Val="1792483880" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/utils_1/imports/vivado/vdma_reset_scope.tcl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/utils_1/imports/vivado/vdma_reset_scope.tcl" />
+          <Attr Name="ImportTime" Val="1792320478" />
+          <Attr Name="UsedIn" Val="synthesis" />
+          <Attr Name="UsedIn" Val="implementation" />
+          <Attr Name="UsedIn" Val="simulation" />
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopAutoSet" Val="TRUE" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_processing_system7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_processing_system7_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_axi_vdma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_axi_vdma_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_axi_vdma_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_camera_start_gpio_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_camera_start_gpio_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_camera_start_gpio_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_13" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_13">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_13" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_xbar_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_1">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_1" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_2">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_2" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_live_status_gpio_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_live_status_gpio_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_live_status_gpio_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_wp4_flag_gpio_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_wp4_flag_gpio_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_wp4_flag_gpio_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_9" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_9">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_9" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_capture_key_sync_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_capture_key_sync_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_capture_key_sync_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_video_clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_video_clk_wiz_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_video_clk_wiz_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_wp4_control_gpio_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_wp4_control_gpio_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_wp4_control_gpio_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_capture_keys_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_capture_keys_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_capture_keys_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_10" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_10">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_10" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_cc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_cc_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_cc_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_wp4_board_bridge_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_wp4_board_bridge_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_wp4_board_bridge_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_14" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_14">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_14" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_11" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_11">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_11" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_4">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_4" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_8" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_8">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_8" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_12" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_12">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_12" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_5">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_5" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_axi_dma_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_axi_dma_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_3">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_3" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_6">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_6" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_7">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_7" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_xbar_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_xbar_1">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_xbar_1" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_reset_100m_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_reset_100m_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_reset_100m_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_reset_lcd_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_reset_lcd_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_reset_lcd_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_real_camera_source_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_real_camera_source_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_real_camera_source_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_camera_clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_camera_clk_wiz_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_camera_clk_wiz_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_reset_camera_config_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_reset_camera_config_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_reset_camera_config_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_rgb_lcd_timing_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_rgb_lcd_timing_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_rgb_lcd_timing_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_match_dma_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_match_dma_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_match_dma_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_reset_hdmi_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_reset_hdmi_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_reset_hdmi_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_xbar_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_xbar_2">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_xbar_2" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_hdmi_diag_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_hdmi_diag_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_hdmi_diag_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_match_core_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_match_core_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_match_core_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_gray_snapshot_capture_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_gray_snapshot_capture_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_gray_snapshot_capture_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_overlay_ack_tracker_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_overlay_ack_tracker_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_overlay_ack_tracker_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_match_control_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_match_control_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_match_control_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_match_reset_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_match_reset_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_match_reset_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_overlay_regs_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_overlay_regs_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_overlay_regs_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_ui_vdma_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_ui_vdma_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_ui_vdma_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_sleep_control_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_sleep_control_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_sleep_control_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_tx2_axis_sink_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_tx2_axis_sink_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_tx2_axis_sink_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_hdmi_video_clk_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_hdmi_video_clk_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_hdmi_video_clk_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_gray_snapshot_bram_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_gray_snapshot_bram_0_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_gray_snapshot_bram_0_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_snapshot_bram_ctrl_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_snapshot_bram_ctrl_0">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_snapshot_bram_ctrl_0" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+    <FileSet Name="facebox_system_auto_pc_15" Type="BlockSrcs" RelSrcDir="$PSRCDIR/facebox_system_auto_pc_15">
+      <Config>
+        <Option Name="TopModule" Val="facebox_system_auto_pc_15" />
+        <Option Name="UseBlackboxStub" Val="1" />
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator" />
+      <Option Name="CompiledLib" Val="0" />
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator" />
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator" />
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator" />
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator" />
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_processing_system7_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_axi_vdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_axi_vdma_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_axi_vdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_camera_start_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_camera_start_gpio_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_camera_start_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_13_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_13" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_13" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_xbar_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_1" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_2_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_2" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_live_status_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_live_status_gpio_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_live_status_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_flag_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_wp4_flag_gpio_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_flag_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_9_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_9" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_9" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_capture_key_sync_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_capture_key_sync_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_capture_key_sync_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_video_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_video_clk_wiz_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_video_clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_control_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_wp4_control_gpio_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_control_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_capture_keys_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_capture_keys_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_capture_keys_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_10_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_10" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_10" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_cc_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_cc_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_cc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_board_bridge_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_wp4_board_bridge_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_board_bridge_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_14_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_14" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_14" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_11_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_11" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_11" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_4_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_4" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_8_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_8" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_12_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_12" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_12" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_5_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_5" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_axi_dma_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_3_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_3" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_6_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_6" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_7_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_7" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_xbar_1" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_100m_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_reset_100m_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_100m_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_lcd_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_reset_lcd_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_lcd_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_real_camera_source_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_real_camera_source_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_real_camera_source_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_camera_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_camera_clk_wiz_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_camera_clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_camera_config_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_reset_camera_config_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_camera_config_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_rgb_lcd_timing_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_rgb_lcd_timing_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_rgb_lcd_timing_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_dma_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_match_dma_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_dma_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_hdmi_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_reset_hdmi_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_hdmi_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_2_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_xbar_2" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_hdmi_diag_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_hdmi_diag_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_hdmi_diag_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_core_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_match_core_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_core_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_gray_snapshot_capture_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_gray_snapshot_capture_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_gray_snapshot_capture_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_overlay_ack_tracker_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_overlay_ack_tracker_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_overlay_ack_tracker_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_control_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_match_control_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_control_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_reset_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_match_reset_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_reset_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_overlay_regs_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_overlay_regs_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_overlay_regs_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_ui_vdma_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_ui_vdma_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_ui_vdma_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_sleep_control_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_sleep_control_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_sleep_control_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_tx2_axis_sink_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_tx2_axis_sink_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_tx2_axis_sink_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_hdmi_video_clk_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_hdmi_video_clk_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_hdmi_video_clk_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_gray_snapshot_bram_0_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_gray_snapshot_bram_0_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_gray_snapshot_bram_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_snapshot_bram_ctrl_0_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_snapshot_bram_ctrl_0" Part="xc7z020clg484-2" ConstrsSet="facebox_system_snapshot_bram_ctrl_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_15_synth_1" Type="Ft3:Synth" SrcSet="facebox_system_auto_pc_15" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_15" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018" />
+        <Step Id="synth_design" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" PreStepTclHook="$PSRCDIR/utils_1/imports/vivado/apply_cdc_constraints.tcl" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_axi_vdma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_axi_vdma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_axi_vdma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_camera_start_gpio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_camera_start_gpio_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_camera_start_gpio_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_13_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_13" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_13_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_live_status_gpio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_live_status_gpio_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_live_status_gpio_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_flag_gpio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_flag_gpio_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_wp4_flag_gpio_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_9_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_9" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_9_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_capture_key_sync_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_capture_key_sync_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_capture_key_sync_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_video_clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_video_clk_wiz_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_video_clk_wiz_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_control_gpio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_control_gpio_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_wp4_control_gpio_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_capture_keys_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_capture_keys_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_capture_keys_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_10_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_10" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_10_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_cc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_cc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_cc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_wp4_board_bridge_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_wp4_board_bridge_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_wp4_board_bridge_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_14_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_14" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_14_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_11_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_11" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_11_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_4_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_8_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_8_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_12_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_12" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_12_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_5_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_5_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_3_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_6_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_6_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_7_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_7_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_xbar_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_100m_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_100m_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_reset_100m_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_lcd_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_lcd_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_reset_lcd_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_real_camera_source_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_real_camera_source_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_real_camera_source_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_camera_clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_camera_clk_wiz_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_camera_clk_wiz_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_camera_config_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_camera_config_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_reset_camera_config_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_rgb_lcd_timing_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_rgb_lcd_timing_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_rgb_lcd_timing_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_dma_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_dma_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_match_dma_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_reset_hdmi_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_reset_hdmi_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_reset_hdmi_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_xbar_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_xbar_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_xbar_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_hdmi_diag_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_hdmi_diag_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_hdmi_diag_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_core_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_core_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_match_core_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_gray_snapshot_capture_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_gray_snapshot_capture_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_gray_snapshot_capture_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_overlay_ack_tracker_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_overlay_ack_tracker_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_overlay_ack_tracker_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_control_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_control_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_match_control_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_match_reset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_match_reset_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_match_reset_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_overlay_regs_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_overlay_regs_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_overlay_regs_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_ui_vdma_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_ui_vdma_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_ui_vdma_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_sleep_control_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_sleep_control_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_sleep_control_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_tx2_axis_sink_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_tx2_axis_sink_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_tx2_axis_sink_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_hdmi_video_clk_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_hdmi_video_clk_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_hdmi_video_clk_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_gray_snapshot_bram_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_gray_snapshot_bram_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_gray_snapshot_bram_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_snapshot_bram_ctrl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_snapshot_bram_ctrl_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_snapshot_bram_ctrl_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+    <Run Id="facebox_system_auto_pc_15_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-2" ConstrsSet="facebox_system_auto_pc_15" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="facebox_system_auto_pc_15_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018" />
+        <Step Id="init_design" />
+        <Step Id="opt_design" />
+        <Step Id="power_opt_design" />
+        <Step Id="place_design" />
+        <Step Id="post_place_power_opt_design" />
+        <Step Id="phys_opt_design" />
+        <Step Id="route_design" />
+        <Step Id="post_route_phys_opt_design" />
+        <Step Id="write_bitstream" />
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018" />
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1" />
+    </Run>
+  </Runs>
+  <Board />
+  <DashboardSummary Version="1" Minor="0">
+    <Dashboards>
+      <Dashboard Name="default_dashboard">
+        <Gadgets>
+          <Gadget Name="drc_1" Type="drc" Version="1" Row="2" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_drc_0 " />
+          </Gadget>
+          <Gadget Name="methodology_1" Type="methodology" Version="1" Row="2" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_methodology_0 " />
+          </Gadget>
+          <Gadget Name="power_1" Type="power" Version="1" Row="1" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_power_0 " />
+          </Gadget>
+          <Gadget Name="timing_1" Type="timing" Version="1" Row="0" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_timing_summary_0 " />
+          </Gadget>
+          <Gadget Name="utilization_1" Type="utilization" Version="1" Row="0" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="synth_1#synth_1_synth_report_utilization_0 " />
+            <GadgetParam Name="RUN.STEP" Type="string" Value="synth_design" />
+            <GadgetParam Name="RUN.TYPE" Type="string" Value="synthesis" />
+          </Gadget>
+          <Gadget Name="utilization_2" Type="utilization" Version="1" Row="1" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_place_report_utilization_0 " />
+          </Gadget>
+        </Gadgets>
+      </Dashboard>
+      <CurrentDashboard>default_dashboard</CurrentDashboard>
+    </Dashboards>
+  </DashboardSummary>
+  <BootPmcSettings Version="1" Minor="0">
+    <Parameters />
+  </BootPmcSettings>
+</Project>

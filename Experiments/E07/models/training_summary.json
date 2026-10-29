@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "identities": 35,
+  "train_images": 591,
+  "val_images": 119,
+  "epochs": 120,
+  "best_centroid_top1": 0.5882352941176471,
+  "elapsed_seconds": 80.21591448783875,
+  "checkpoint": "D:\\2026FPGA\\AC880_CNN_Research_20261018\\models\\tinyface_spatial_v1\\tinyface_best.pth"
+}

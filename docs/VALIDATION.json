@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-29",
+  "public_ps_builds": {
+    "Final_E04_Sleep": {
+      "status": "PASS",
+      "c_units": 34,
+      "hdf_sha256": "13994f7125fe61976d030449294d9e43a8a3137d6b21799a177c4b7b2fef01c2",
+      "elf_sha256": "7ba6c4bdad4fb63bf637d3cd09ed5c457518185ed8c8990f474a1390e4e80b7f"
+    },
+    "E01": {
+      "status": "PASS",
+      "c_units": 34,
+      "hdf_sha256": "97e42f958e2b946cdbb5b6a4f140dbfa990cdf26b8553c06e6cc3cdfe7135bbc",
+      "elf_sha256": "7ba3653585152bc736a895fefd0ce6afbc859a4d6f0b0f25a6b2b580cd7edfe9"
+    },
+    "E02": {
+      "status": "PASS",
+      "c_units": 56,
+      "hdf_sha256": "bae18fbcf738abb19259cc8af9a07ad477498c94c69ca9dbe80d99be2aa653f9",
+      "elf_sha256": "b78d1ebb38a094389f665535c0840c1690f446434a3388f1b5ed775e9f947100"
+    },
+    "E03": {
+      "status": "PASS",
+      "c_units": 50,
+      "hdf_sha256": "bae18fbcf738abb19259cc8af9a07ad477498c94c69ca9dbe80d99be2aa653f9",
+      "elf_sha256": "fcf94e83dab1cb89bb10c3aebb4e607e60be8e52da38d1f7bf9b6c65c61921f6"
+    },
+    "E04": {
+      "status": "PASS",
+      "c_units": 33,
+      "hdf_sha256": "97e42f958e2b946cdbb5b6a4f140dbfa990cdf26b8553c06e6cc3cdfe7135bbc",
+      "elf_sha256": "fc9fa22253958d3dac384d5801c3d61c1803a49f0ef006a857afe9e43a674e50"
+    },
+    "E05": {
+      "status": "PASS",
+      "c_units": 34,
+      "hdf_sha256": "a64c68e99bdf666f7721eae0a8440e71c8ecfa78c76f2687cac53cf8d767e55d",
+      "elf_sha256": "38f32bd2de1f5004f72aff6719e7eb61afc8b79a757c35904729c0777476327d"
+    },
+    "E06": {
+      "status": "PASS",
+      "c_units": 53,
+      "hdf_sha256": "bae18fbcf738abb19259cc8af9a07ad477498c94c69ca9dbe80d99be2aa653f9",
+      "elf_sha256": "708db8dbbcf0e97f9969c6823d31492f6b5557925521069ff8cc11a22f2a23bb"
+    },
+    "E07": {
+      "status": "PASS",
+      "c_units": 54,
+      "hdf_sha256": "5e366385ad0dca5185560d57e45d17e45e586deed7ef00de8b4349469f61c82a",
+      "elf_sha256": "ffa92e223fb4027016f9ea43c1dd8eed05e37395d83273cbbde09fcd0dd12baa"
+    }
+  },
+  "empty_gallery_tests": {
+    "Final_E04_Sleep/src": "empty, reject, enroll, match, reinit PASS",
+    "E01/src": "empty, reject, enroll, match, reinit PASS",
+    "E01/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E02/src": "empty, reject, enroll, match, reinit PASS",
+    "E02/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E03/src": "empty, reject, enroll, match, reinit PASS",
+    "E03/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E04/src": "empty, reject, enroll, match, reinit PASS",
+    "E04/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E05/src": "empty, reject, enroll, match, reinit PASS",
+    "E05/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E06/src": "empty, reject, enroll, match, reinit PASS",
+    "E06/baseline_src": "empty, reject, enroll, match, reinit PASS",
+    "E07/src": "empty, reject, enroll, match, reinit PASS",
+    "E07/baseline_src": "empty, reject, enroll, match, reinit PASS"
+  },
+  "unchanged_hardware_project_and_other_software_files": 3468,
+  "changed_sources": [
+    "Experiments/E01/software/baseline_src/wp4_classify.c",
+    "Experiments/E01/software/src/wp4_classify.c",
+    "Experiments/E02/software/baseline_src/wp4_classify.c",
+    "Experiments/E02/software/src/wp4_classify.c",
+    "Experiments/E03/software/baseline_src/wp4_classify.c",
+    "Experiments/E03/software/src/wp4_classify.c",
+    "Experiments/E04/software/baseline_src/wp4_classify.c",
+    "Experiments/E04/software/src/wp4_classify.c",
+    "Experiments/E05/software/baseline_src/wp4_classify.c",
+    "Experiments/E05/software/src/wp4_classify.c",
+    "Experiments/E06/software/baseline_src/wp4_classify.c",
+    "Experiments/E06/software/src/wp4_classify.c",
+    "Experiments/E07/software/baseline_src/wp4_classify.c",
+    "Experiments/E07/software/src/wp4_classify.c",
+    "Final_E04_Sleep/software/src/wp4_classify.c"
+  ],
+  "full_public_hardware_implementation_rerun": false,
+  "public_board_test": false,
+  "network_publication": false
+}

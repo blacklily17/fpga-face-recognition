@@ -1,0 +1,37 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 29 11:35:27 2026
+| Host         : LAPTOP-LM5IO3PF running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file E:/3FALL/FPGA_programme/face_recognition/_e04sleep29/build/h/r01/reports/facebox/clock_interaction.rpt
+| Design       : facebox_system_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                            WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock                  
+From Clock                                    To Clock                                      Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints                  
+--------------------------------------------  --------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  ---------------------------  
+cam_pclk_in                                   cam_pclk_in                                   rise - rise    11.68     0.00            0         1372            20.00  Clean                Partial False Path           
+cam_pclk_in                                   clk_fpga_0                                    rise - rise     3.34     0.00            0           64             5.00  No Common Clock      Partial False Path (unsafe)  
+clk_fpga_0                                    cam_pclk_in                                   rise - rise     7.89     0.00            0           27            10.00  No Common Clock      Partial False Path (unsafe)  
+clk_fpga_0                                    clk_fpga_0                                    rise - rise     1.25     0.00            0        67287            10.00  Clean                Partial False Path           
+clk_fpga_0                                    clk_out1_facebox_system_camera_clk_wiz_0_1    rise - rise     6.74     0.00            0            1            10.00  No Common Clock      Timed (unsafe)               
+clk_fpga_0                                    clk_out1_facebox_system_hdmi_video_clk_0_1    rise - rise     3.36     0.00            0          329             5.00  Ignored              Max Delay Datapath Only      
+clk_fpga_0                                    clk_out1_facebox_system_video_clk_wiz_0                                                0           21                   Ignored              False Path                   
+clk_out1_facebox_system_camera_clk_wiz_0_1    cam_pclk_in                                                                            0            3                   Ignored              False Path                   
+clk_out1_facebox_system_camera_clk_wiz_0_1    clk_fpga_0                                    rise - rise     7.24     0.00            0           26            10.00  No Common Clock      Partial False Path (unsafe)  
+clk_out1_facebox_system_camera_clk_wiz_0_1    clk_out1_facebox_system_camera_clk_wiz_0_1    rise - rise    13.77     0.00            0          889            20.00  Clean                Timed                        
+clk_out1_facebox_system_hdmi_video_clk_0_1    clk_fpga_0                                    rise - rise    12.20     0.00            0          109            13.47  Ignored              Max Delay Datapath Only      
+clk_out1_facebox_system_hdmi_video_clk_0_1    clk_out1_facebox_system_hdmi_video_clk_0_1    rise - rise     2.96     0.00            0         4701            13.47  Clean                Partial False Path           
+clk_out1_facebox_system_hdmi_video_clk_0_1    clk_out2_facebox_system_hdmi_video_clk_0_1                                             0            8                   Ignored              False Path                   
+clk_out1_facebox_system_video_clk_wiz_0       clk_fpga_0                                                                             0            5                   Ignored              False Path                   
+clk_out1_facebox_system_video_clk_wiz_0       clk_out1_facebox_system_video_clk_wiz_0       rise - rise    23.36     0.00            0          397            30.00  Clean                Partial False Path           
+clk_out2_facebox_system_hdmi_video_clk_0_1    clk_out2_facebox_system_hdmi_video_clk_0_1    rise - rise     0.51     0.00            0           24             2.69  Clean                Timed                        
+
+

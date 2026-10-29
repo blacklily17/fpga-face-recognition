@@ -1,0 +1,58 @@
+{
+  "checkpoint": "D:\\2026FPGA\\AC880_CNN_Research_20261018\\models\\tinyface_spatial_v1\\tinyface_best.pth",
+  "checkpoint_sha256": "618fb8c0b9bc8eaa80ebff40c691bbfb109fa885e5964f024d5ce22c7ff71cda",
+  "dataset": "D:\\2026FPGA\\AC880_CNN_Research_20261018\\datasets\\chinese_faces\\china400_clean",
+  "identities": 35,
+  "train_images": 591,
+  "validation_images": 119,
+  "calibration_images": 512,
+  "activation_scales": [
+    0.06860879462534987,
+    0.07915785181240773,
+    0.059326231948972685,
+    0.03921044717623493
+  ],
+  "float_folded": {
+    "top1": 0.5882352941176471,
+    "samples": 119,
+    "mean_genuine_cosine": 0.4862324028718066,
+    "median_genuine_cosine": 0.5393479534420015,
+    "mean_best_margin": 0.17177917874757065,
+    "default_threshold_accept_rate": 0.6470588235294118,
+    "default_threshold_known_recall": 0.44537815126050423,
+    "default_threshold_precision": 0.6883116883116883
+  },
+  "quantized": {
+    "top1": 0.5798319327731093,
+    "samples": 119,
+    "mean_genuine_cosine": 0.48696689047554864,
+    "median_genuine_cosine": 0.546273811939982,
+    "mean_best_margin": 0.16856224219408766,
+    "default_threshold_accept_rate": 0.6470588235294118,
+    "default_threshold_known_recall": 0.46218487394957986,
+    "default_threshold_precision": 0.7142857142857143
+  },
+  "float_flip_tta": {
+    "top1": 0.6134453781512605,
+    "samples": 119,
+    "mean_genuine_cosine": 0.5307172537871016,
+    "median_genuine_cosine": 0.5820750576782422,
+    "mean_best_margin": 0.18250049602039625,
+    "default_threshold_accept_rate": 0.6386554621848739,
+    "default_threshold_known_recall": 0.4957983193277311,
+    "default_threshold_precision": 0.7763157894736842
+  },
+  "quantized_flip_tta": {
+    "top1": 0.6134453781512605,
+    "samples": 119,
+    "mean_genuine_cosine": 0.5319213863242506,
+    "median_genuine_cosine": 0.5779797883218362,
+    "mean_best_margin": 0.18059536182767674,
+    "default_threshold_accept_rate": 0.6470588235294118,
+    "default_threshold_known_recall": 0.4957983193277311,
+    "default_threshold_precision": 0.7662337662337663
+  },
+  "mean_float_quant_cosine": 0.9985496380749128,
+  "minimum_float_quant_cosine": 0.9953700772226121,
+  "weight_bytes": 23400
+}

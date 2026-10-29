@@ -1,0 +1,61 @@
+// Vivado 2018.3 module-reference boundary; real implementation remains SV.
+module gray_snapshot_capture_bd #(
+    parameter integer WIDTH=400, HEIGHT=240,
+    parameter [63:0] TIMEOUT_TICKS=64'd100000000
+)(
+    input wire aclk,aresetn,gray_valid,gray_sof,gray_eol,
+    input wire [7:0] gray_data,
+    input wire frame_abort,frame_commit,request,release_frame,cancel,clear_error,
+    input wire [31:0] committed_frame_id,request_id,epoch,
+    input wire [31:0] gray_source_id,verdict_source_id,
+    input wire verdict_valid,verdict_good,provenance_fault,
+    input wire [63:0] time_ticks,
+    output wire busy,ready,error,
+    output wire [31:0] snap_request_id,snap_frame_id,snap_epoch,snap_error_code,
+    output wire [63:0] snap_source_ticks,snap_commit_ticks,
+    output wire bram_we,
+    output wire [14:0] bram_addr,
+    output wire [31:0] bram_wdata,
+    output wire snap_ready_event,snap_abort_event,format_error_event,snap_timeout_event
+);
+    gray_snapshot_capture #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.TIMEOUT_TICKS(TIMEOUT_TICKS)) u_core(
+        .aclk(aclk),
+        .aresetn(aresetn),
+        .gray_valid(gray_valid),
+        .gray_sof(gray_sof),
+        .gray_eol(gray_eol),
+        .gray_data(gray_data),
+        .frame_abort(frame_abort),
+        .frame_commit(frame_commit),
+        .request(request),
+        .release_frame(release_frame),
+        .cancel(cancel),
+        .clear_error(clear_error),
+        .committed_frame_id(committed_frame_id),
+        .request_id(request_id),
+        .epoch(epoch),
+        .gray_source_id(gray_source_id),
+        .verdict_source_id(verdict_source_id),
+        .verdict_valid(verdict_valid),
+        .verdict_good(verdict_good),
+        .provenance_fault(provenance_fault),
+        .time_ticks(time_ticks),
+        .busy(busy),
+        .ready(ready),
+        .error(error),
+        .snap_request_id(snap_request_id),
+        .snap_frame_id(snap_frame_id),
+        .snap_epoch(snap_epoch),
+        .snap_error_code(snap_error_code),
+        .snap_source_ticks(snap_source_ticks),
+        .snap_commit_ticks(snap_commit_ticks),
+        .bram_we(bram_we),
+        .bram_addr(bram_addr),
+        .bram_wdata(bram_wdata),
+        .snap_ready_event(snap_ready_event),
+        .snap_abort_event(snap_abort_event),
+        .format_error_event(format_error_event),
+        .snap_timeout_event(snap_timeout_event)
+    );
+endmodule
+

@@ -1,0 +1,89 @@
+{
+  "model_sha256": "32aa082f7f665026523bf50971404dd347fbeeed619d8a0232950743ea94b88b",
+  "checkpoint_sha256": "a9858ace0c593cb003560e290a8be0d77cbd6a5946bedad50eb0da83531766df",
+  "calibration_inputs": 16,
+  "checks": [
+    {
+      "index": 0,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 3.920140443369746e-07
+    },
+    {
+      "index": 1,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 5.02739567309618e-07
+    },
+    {
+      "index": 2,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.17654518969357e-07
+    },
+    {
+      "index": 3,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.7439971240237355e-07
+    },
+    {
+      "index": 4,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 7.049893611110747e-07
+    },
+    {
+      "index": 5,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.0057057049125433e-07
+    },
+    {
+      "index": 6,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 5.591573426499963e-07
+    },
+    {
+      "index": 7,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.185058060102165e-07
+    },
+    {
+      "index": 8,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.3357431422919035e-07
+    },
+    {
+      "index": 9,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.285830073058605e-07
+    },
+    {
+      "index": 10,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.1816383600234985e-07
+    },
+    {
+      "index": 11,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.001849447377026e-07
+    },
+    {
+      "index": 12,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.110333975404501e-07
+    },
+    {
+      "index": 13,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.5145134208723903e-07
+    },
+    {
+      "index": 14,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 5.812617018818855e-07
+    },
+    {
+      "index": 15,
+      "stage_byte_mismatches": 0,
+      "head_max_absolute_error": 4.175672074779868e-07
+    }
+  ],
+  "heldout_read": false,
+  "board_tested": false
+}
